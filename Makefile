@@ -13,6 +13,7 @@ help:
 	@echo "  make down          - Stop all services"
 	@echo "  make logs          - Show app & ES logs"
 	@echo "  make clean         - Remove Docker image & containers"
+	@echo "  make test          - Run all tests locally with Maven"
 	@echo ""
 
 build:
@@ -36,3 +37,8 @@ logs:
 clean:
 	$(DOCKER_COMPOSE) down -v --rmi local
 	docker rmi -f $(DOCKER_IMAGE) || true
+
+test:
+	@echo "Running all tests locally..."
+	@docker info >/dev/null 2>&1 || (echo "ERROR: Docker is not running. Please start Docker and try again." && exit 1)
+	./mvnw test

@@ -1,15 +1,67 @@
 [
   {
-    "id": "test1",
-    "title": "Test Course",
-    "description": "A test course.",
-    "category": "Test",
+    "id": "1",
+    "title": "Dinosaurs 101",
+    "description": "A beginner's course on dinosaurs",
+    "category": "Science",
     "type": "COURSE",
-    "gradeRange": "10-12",
-    "minAge": 15,
-    "maxAge": 18,
-    "price": 50.0,
-    "nextSessionDate": "2025-08-01T09:00:00Z",
-    "suggest": "Test Course"
+    "gradeRange": "K-12",
+    "minAge": 8,
+    "maxAge": 12,
+    "price": 49.99,
+    "nextSessionDate": "2025-08-01T00:00:00Z",
+    "suggest": "Dinosaurs 101"
+  },
+  {
+    "id": "2",
+    "title": "Algebra Basics",
+    "description": "Introduction to algebraic concepts",
+    "category": "Math",
+    "type": "ONE_TIME",
+    "gradeRange": "6th–8th",
+    "minAge": 11,
+    "maxAge": 14,
+    "price": 29.99,
+    "nextSessionDate": "2025-07-15T10:00:00Z",
+    "suggest": "Algebra Basics"
+  },
+  {
+    "id": "3",
+    "title": "Painting Workshop",
+    "description": "Learn basic painting techniques",
+    "category": "Art",
+    "type": "CLUB",
+    "gradeRange": "4th–6th",
+    "minAge": 9,
+    "maxAge": 12,
+    "price": 39.99,
+    "nextSessionDate": "2025-09-01T14:00:00Z",
+    "suggest": "Painting Workshop"
+  },
+  {
+    "id": "4",
+    "title": "Physics for Kids",
+    "description": "Explore physics concepts",
+    "category": "Science",
+    "type": "COURSE",
+    "gradeRange": "5th–7th",
+    "minAge": 10,
+    "maxAge": 13,
+    "price": 59.99,
+    "nextSessionDate": "2025-08-15T09:00:00Z",
+    "suggest": "Physics for Kids"
+  },
+  {
+    "id": "5",
+    "title": "Creative Writing",
+    "description": "Develop writing skills",
+    "category": "English",
+    "type": "CLUB",
+    "gradeRange": "3rd–5th",
+    "minAge": 8,
+    "maxAge": 11,
+    "price": 34.99,
+    "nextSessionDate": "2025-07-20T12:00:00Z",
+    "suggest": "Creative Writing"
   }
 ]
