@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "id": { "type": "keyword" },
+    "title": {
+      "type": "text",
+      "analyzer": "fuzzy_analyzer",
+      "search_analyzer": "fuzzy_analyzer",
+      "fields": {
+        "ngram": {
+          "type": "text",
+          "analyzer": "ngram_analyzer",
+          "search_analyzer": "ngram_analyzer"
+        }
+      }
+    },
+    "description": { "type": "text", "analyzer": "standard" },
+    "category": { "type": "keyword" },
+    "type": { "type": "keyword" },
+    "gradeRange": { "type": "keyword" },
+    "minAge": { "type": "integer" },
+    "maxAge": { "type": "integer" },
+    "price": { "type": "double" },
+    "nextSessionDate": { "type": "date", "format": "strict_date_optional_time||epoch_millis" },
+    "suggest": { "type": "completion" }
+  }
+}
