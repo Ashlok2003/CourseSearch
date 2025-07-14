@@ -45,27 +45,27 @@ The application provides Swagger UI for interactive API testing:
 
 ### Basic Search
 ```bash
-curl "http://localhost:8080/api/search?q=algebra&category=Math&minAge=10&maxAge=15&page=0&size=5"
+curl "http://localhost:8080/api/v1/search?q=algebra&category=Math&minAge=10&maxAge=15&page=0&size=5"
 ```
 
 ### Search with Price Range
 ```bash
-curl "http://localhost:8080/api/search?minPrice=50&maxPrice=100&sort=priceAsc"
+curl "http://localhost:8080/api/v1/search?minPrice=50&maxPrice=100&sort=priceAsc"
 ```
 
 ### Upcoming Courses
 ```bash
-curl "http://localhost:8080/api/search?startDate=2025-07-10"
+curl "http://localhost:8080/api/v1/search?startDate=2025-07-10"
 ```
 
 ### Autocomplete Suggestions
 ```bash
-curl "http://localhost:8080/api/search/suggest?q=rob"
+curl "http://localhost:8080/api/v1/search/suggest?q=rob"
 ```
 
 ### Fuzzy Search
 ```bash
-curl "http://localhost:8080/api/search?q=dinors"
+curl "http://localhost:8080/api/v1/search?q=dinors"
 ```
 
 ## Data Initialization
@@ -73,7 +73,7 @@ The application automatically loads sample data from `src/main/resources/sample-
 
 To verify data is loaded:
 ```bash
-curl "http://localhost:8080/api/search?size=1"
+curl "http://localhost:8080/api/v1/search?size=1"
 ```
 
 ## Project Structure
