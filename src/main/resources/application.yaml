@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: course-search
+  profiles:
+    active: dev
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
+    operations-sorter: method
+    tags-sorter: alpha
+
+logging:
+  level:
+    com.example.coursesearch: INFO
+    org.springframework.data.elasticsearch: DEBUG
