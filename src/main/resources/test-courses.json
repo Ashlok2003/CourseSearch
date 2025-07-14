@@ -1,0 +1,15 @@
+[
+  {
+    "id": "test1",
+    "title": "Test Course",
+    "description": "A test course.",
+    "category": "Test",
+    "type": "COURSE",
+    "gradeRange": "10-12",
+    "minAge": 15,
+    "maxAge": 18,
+    "price": 50.0,
+    "nextSessionDate": "2025-08-01T09:00:00Z",
+    "suggest": "Test Course"
+  }
+]
